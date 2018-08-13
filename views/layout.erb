@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bakery</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300|Yesteryear" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <ul class="menu">
+        <li>
+          <a href="../"><h1>Bakery Name Here</h1></a>
+        </li>
+        <li>
+          <a href="/cookies">Cookies</a>
+        </li>
+        <li>
+          <a href="/cakes">Cakes</a>
+        </li>
+        <li>
+          <a href="/muffins">Muffins</a>
+        </li>
+      </ul>
+    </header>
+      <%= yield %>
+    <footer><form><input type="email" placeholder="Sign up to recieve our full catalog"><input type="submit" value="Send"></form></footer>
+  </body>
+</html>

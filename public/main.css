@@ -1,0 +1,106 @@
+html {
+  background-image: url("images/pie.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  color: rgb(40, 40, 40);
+  background-attachment: fixed;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  background-image: url("images/lace.png");
+  background-size: cover;
+  background-position: top;
+}
+h1 {
+  font-family: 'Yesteryear', cursive;
+  display: inline;
+  margin: 0;
+  font-size: 30px;
+  font-weight: normal;
+}
+.grid div {
+  background-color: rgba(255, 249, 217, .5);
+  margin: 10px;
+  border-radius: 3px;
+  padding: 5px;
+}
+.maingrid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 70vw 30vw;
+  grid-auto-rows: 100%;
+  top: 60px;
+  bottom: 30px;
+}
+.flex {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0px;
+  background-color: rgb(255, 249, 217);
+  background-image: linear-gradient(0deg, #e6ecfa 7.14%, transparent 7.14%, transparent 50%, #e6ecfa 50%, #e6ecfa 57.14%, transparent 57.14%, transparent 100%), linear-gradient(90deg, #dcf5d7 7.14%, #faf6e1 7.14%, #faf6e1 50%, #dcf5d7 50%, #dcf5d7 57.14%, #faf6e1 57.14%, #faf6e1 100%) ;
+background-size: 14.00px 14.00px;
+box-shadow: 0 0 1px black;
+}
+
+img {
+  max-width: 20vw;
+}
+
+.menu li {
+  display: inline;
+  margin: 10px;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  bottom: 0px;
+  text-align: center;
+  background-color: rgb(255, 249, 217);
+  background-image: linear-gradient(0deg, #e6ecfa 7.14%, transparent 7.14%, transparent 50%, #e6ecfa 50%, #e6ecfa 57.14%, transparent 57.14%, transparent 100%), linear-gradient(90deg, #dcf5d7 7.14%, #faf6e1 7.14%, #faf6e1 50%, #dcf5d7 50%, #dcf5d7 57.14%, #faf6e1 57.14%, #faf6e1 100%) ;
+background-size: 14.00px 14.00px;
+box-shadow: 0 0 1px black;
+}
+
+.grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  margin-top: 75px;
+  margin-bottom: 45px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+}
+a:visited {
+  color: rgb(40, 40, 40);
+}
+.recipe {
+  background-color: rgb(255, 249, 217);
+  background-image: linear-gradient(0deg, #e6ecfa 7.14%, transparent 7.14%, transparent 50%, #e6ecfa 50%, #e6ecfa 57.14%, transparent 57.14%, transparent 100%), linear-gradient(90deg, #dcf5d7 7.14%, #faf6e1 7.14%, #faf6e1 50%, #dcf5d7 50%, #dcf5d7 57.14%, #faf6e1 57.14%, #faf6e1 100%) ;
+background-size: 14.00px 14.00px;
+box-shadow: 0 0 1px black;
+padding: 5px;
+font-size: 10px;
+}
+.recipe img {
+  max-width: 150px;
+  float: left;
+  margin-right: 15px;
+}

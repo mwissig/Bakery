@@ -1,0 +1,15 @@
+<div class="maingrid">
+<div class="flex">
+<img src="images/cookie.png"> <img src="images/cake.png"> <img src="images/muffin.png"></div>
+
+  <div class="recipe"><h2>Try these recipes at home!</h2>
+    <% $recipes.shuffle! %>
+    <% $ingredients = "" %>
+    <% $recipes[0].ingredients.each { |ing| $ingredients << "<li>" + ing + "</li>" }%>
+    <% i = 0 %>
+    <% 3.times do %>
+  <%= "<h3><a href='#{$recipes[0].url}'>#{$recipes[0].title}</a></h3><img src='#{$recipes[0].image}'><ul>#{$ingredients}</ul>" %>
+  <% i += 1 %>
+  <% end %>
+</div>
+</div>
