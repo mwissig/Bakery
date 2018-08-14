@@ -1,6 +1,6 @@
 <div class="subitlecontainer"><h2 class="subtitle">Queen Anne's Cakes</h2></div>
 <div class="grid">
 <% text = "" %>
-<% $cakes.shuffle!.each_index {|i| text << "<div><h3>#{$cakes[i].name}</h3><img src='#{$cakes[i].image}'><p>#{$cakes[i].description}</p><b>#{$cakes[i].price} / ea</b></div>" } %>
+<% $cakes.shuffle!.each_index {|i| text << "<div><h3>#{$cakes[i].name}</h3><img class='pastry' src='#{$cakes[i].image}'><p>#{$cakes[i].description}</p><b>#{$cakes[i].price} / ea</b></div>" } %>
 <%= text %>
 </div>

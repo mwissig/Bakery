@@ -12,7 +12,17 @@ html {
   background-attachment: fixed;
   overflow-x: hidden;
 }
-
+.description {
+  position: absolute;
+  width: 200px;
+left: 20px;
+  bottom: 75px;
+  background-color: rgba(255, 249, 217, .7);
+  margin: 10px;
+  border-radius: 3px;
+  padding: 5px;
+    box-shadow: 0 1px 2px black;
+}
 body {
   margin: 0 auto;
   font-family: 'Poppins', sans-serif;
@@ -29,11 +39,11 @@ h1 {
     text-shadow: 0 0 2px white !important;
     color: red !important;
 }
-#bigcake {
+#bigcake, .pastry {
   transition-property: transform;
   transition-duration: 2s;
 }
-#bigcake:hover {
+#bigcake:hover, .pastry:hover {
     transform: rotate(2deg);
 }
 .big {
@@ -41,7 +51,7 @@ h1 {
   font-size: 100px;
   color: #faf6e1;
   position: absolute;
-  top: -1vh;
+  top: -10vh;
   left: 7vw;
   text-shadow: 0 1px 2px black;
   font-weight: normal;
@@ -53,7 +63,7 @@ h1 {
   color: #0e1d0a;
   font-size: 60px;
   position: absolute;
-  top: 68vh;
+  top: 62vh;
   left: 45vw;
   text-shadow: 0 1px 2px white;
   z-index: 11;
@@ -157,10 +167,13 @@ footer {
 a {
   text-decoration: none;
   color: rgb(40, 40, 40);
+  border-radius: 5px;
+  padding: 2px 5px;
 }
 
 a:hover {
-  color: red;
+  color: rgb(94, 5, 0);
+  background-color: rgba(250, 255, 0, 0.35);
   font-weight: bold;
 }
 
@@ -224,4 +237,111 @@ left: 30vw;
 }
 .hide {
   visibility: hidden;
+}
+@media only screen and (max-width: 800px) {
+  .description {
+
+visibility: hidden;
+  }
+  .grid {
+    grid-template-columns: repeat(3, auto);
+  }
+  .grid img {
+    max-width: 28vw;
+  }
+  header {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    overflow: auto;
+  }
+  .grid {
+    grid-template-columns: repeat(2, auto);
+  }
+  .grid img {
+    max-width: 40vw;
+  }
+  header h1{
+    display: block;
+  }
+  .callus {
+    display: block;
+  }
+  header {
+    font-size: 12px;
+    height: 100px;
+margin: 0;
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: 3s;
+    z-index: 12;
+  }
+  footer {
+    font-size: 10px;
+    z-index: 12;
+  }
+  .menu li {
+    text-align: center;
+  }
+  .menu {
+    margin: 0 !important;
+    padding: 0 !important;
+        text-align: center;
+  }
+  .maingrid {
+    position: relative;
+    grid-template-rows: 70vh 80vh;
+    grid-template-columns: 100%;
+    grid-auto-rows: 100%;
+    top: 100px;
+    bottom: 30px;
+    overflow: auto;
+    width: 100%;
+  }
+  .flex {
+    display: inline;
+    text-align: center;
+    margin-top: 0px;
+    overflow: auto;
+  }
+  #bigcake {
+    position: relative;
+  }
+  .big {
+    font-size: 70px;
+    position: relative;
+    margin: 5px;
+    margin-top: 75px;
+  }
+
+  .med {
+    font-size: 60px;
+    position: relative;
+    z-index: 11;
+        margin: 5px;
+  }
+
+  .subtitle {
+    margin: 10px;
+    font-size: 50px;
+  }
+  .subitlecontainer {
+      margin-top: 50px;
+    text-align: center;
+  }
+  .recipe {
+    z-index: 11;
+    padding-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .grid {
+    grid-template-columns: 100%;
+  }
+  .grid img {
+    max-width: 80vw;
+  }
 }

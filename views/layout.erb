@@ -9,7 +9,7 @@
   </head>
   <body>
     <img src="images/cookie.png" class="hide" id='cookie'>    <img src="images/cake.png" class="hide" id='cake'>    <img src="images/muffin.png" class="hide" id='muffin'>
-    <header>
+    <header id="header" href="#header">
       <ul class="menu">
         <li>
           <a href="../"><h1 class="home">Queen Anne's Bakery</h1></a>
@@ -23,7 +23,7 @@
         <li>
           <a href="/muffins" onmouseover="hoverdropMuffin()">Muffins</a>
         </li>
-      <%=  "<li>Call us at #{$phone} or visit our shop to order!" %>
+      <%=  "<li><span class='callus'>Call us at #{$phone} or visit our shop to order!</span>" %>
         </li>
       </ul>
     </header>
