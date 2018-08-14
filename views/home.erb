@@ -3,10 +3,7 @@
   <div class="flex">   <h2 class="big">Elegant Cakes</h1>
     <img id="bigcake" src="images/vict.png">
         <h2 class="med">Fresh Muffins</h2></div>
-<div class="description">Established in 1973, Queen Anne's Bakery is the oldest operating bakery in
-<%= $city %>
-.
-</div>
+
   <div class="recipe">
     <h2>Love baking? Try these recipes at home!</h2>
     <% $recipes.shuffle! %>
@@ -20,9 +17,13 @@
           <% x += 1 %>
             <% end %>
 
-              <%= "<h3><a href='#{$recipes[i].url}'>#{$recipes[i].title}</a></h3><img src='#{$recipes[i].image}'>You'll need:<ul>#{$ingredients}</ul><p><a href='#{$recipes[i].url}'></p><p class='right'>read more...</a></p>" %>
+              <%= "<h3><a href='#{$recipes[i].url}' target='_blank'>#{$recipes[i].title}</a></h3><img src='#{$recipes[i].image}'>You'll need:<ul>#{$ingredients}</ul><p><a href='#{$recipes[i].url}' target='_blank'></p><p class='right'>read more...</a></p>" %>
             </div><hr>
               <% i += 1 %><% end %>
             </div>
+          </div>
+          <div class="description">Established in 1973, Queen Anne's Bakery is the oldest operating bakery in
+          <%= $city %>
+          .
           </div>
           <!-- cake from  http://www.summersymphonylive.com/9311/pic-of-sponge-14-05-2018/interesting-pic-of-sponge-victoria-cake-harriets-cafe-tearooms/ -->
