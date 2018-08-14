@@ -2,28 +2,35 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Bakery</title>
+    <title>Queen Anne's Bakery</title>
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300|Yesteryear" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+    <img src="images/cookie.png" class="hide" id='cookie'>    <img src="images/cake.png" class="hide" id='cake'>    <img src="images/muffin.png" class="hide" id='muffin'>
     <header>
       <ul class="menu">
         <li>
-          <a href="../"><h1>Bakery Name Here</h1></a>
+          <a href="../"><h1 class="home">Queen Anne's Bakery</h1></a>
         </li>
         <li>
-          <a href="/cookies">Cookies</a>
+          <a href="/cookies" onmouseover="hoverdropCookie()">Cookies</a>
         </li>
         <li>
-          <a href="/cakes">Cakes</a>
+          <a href="/cakes" onmouseover="hoverdropCake()">Cakes</a>
         </li>
         <li>
-          <a href="/muffins">Muffins</a>
+          <a href="/muffins" onmouseover="hoverdropMuffin()">Muffins</a>
+        </li>
+      <%=  "<li>Call us at #{$phone} or visit our shop to order!" %>
         </li>
       </ul>
     </header>
       <%= yield %>
-    <footer><form><input type="email" placeholder="Sign up to recieve our full catalog"><input type="submit" value="Send"></form></footer>
+    <footer>
+<%=  "Visit us at #{$address}" %>
+    </footer>
+    <script src="bake.js"></script>
   </body>
 </html>
