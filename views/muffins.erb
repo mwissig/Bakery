@@ -1,6 +1,0 @@
-<div class="subitlecontainer"><h2 class="subtitle">Queen Anne's Muffins</h2></div>
-<div class="grid">
-<% text = "" %>
-<% $muffins.shuffle!.each_index {|i| text << "<div><h3>#{$muffins[i].name}</h3><img class='pastry' src='#{$muffins[i].image}'><p>#{$muffins[i].description}</p><b>#{$muffins[i].price} / doz</b></div>" } %>
-<%= text %>
-</div>

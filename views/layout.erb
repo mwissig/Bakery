@@ -8,11 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <img src="images/cookie.png" class="hide" id='cookie'>    <img src="images/cake.png" class="hide" id='cake'>    <img src="images/muffin.png" class="hide" id='muffin'>
+    <img src="images/cookie.png" class="hide" id='cookie'>
+    <img src="images/cake.png" class="hide" id='cake'>
+    <img src="images/muffin.png" class="hide" id='muffin'>
     <header id="header" href="#header">
       <ul class="menu">
         <li>
-          <a href="../"><h1 class="home">Queen Anne's Bakery</h1></a>
+          <a href="../">
+            <h1 class="home">Queen Anne's Bakery</h1>
+          </a>
         </li>
         <li>
           <a href="/cookies" onmouseover="hoverdropCookie()">Cookies</a>
@@ -23,14 +27,14 @@
         <li>
           <a href="/muffins" onmouseover="hoverdropMuffin()">Muffins</a>
         </li>
-      <%=  "<li><span class='callus'>Call us at #{$phone} or visit our shop to order!</span>" %>
-        </li>
-      </ul>
-    </header>
-      <%= yield %>
-    <footer>
-<%=  "Visit us at #{$address}" %>
-    </footer>
-    <script src="bake.js"></script>
-  </body>
+        <%= "<li><span class='callus'>Call us at #{$phone} or visit our shop to order!</span>" %>
+      </li>
+    </ul>
+  </header>
+  <%= yield %>
+  <footer>
+    <%= "Visit us at #{$address}" %>
+  </footer>
+  <script src="bake.js"></script>
+</body>
 </html>
