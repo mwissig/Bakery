@@ -190,8 +190,8 @@ a:visited {
 
 .recipe {
   background-color: rgb(255, 249, 217);
-  background-image: linear-gradient(0deg, #e6ecfa 7.14%, transparent 7.14%, transparent 50%, #e6ecfa 50%, #e6ecfa 57.14%, transparent 57.14%, transparent 100%), linear-gradient(90deg, #dcf5d7 7.14%, #faf6e1 7.14%, #faf6e1 50%, #dcf5d7 50%, #dcf5d7 57.14%, #faf6e1 57.14%, #faf6e1 100%);
-  background-size: 14.00px 14.00px;
+    background-image: linear-gradient(0deg, #faf6e1 7.14%, transparent 7.14%, transparent 50%, #faf6e1 50%, #faf6e1 57.14%, transparent 57.14%, transparent 100%), linear-gradient(90deg, #dcf5d7 7.14%, #e6ecfa 7.14%, #e6ecfa 50%, #dcf5d7 50%, #dcf5d7 57.14%, #e6ecfa 57.14%, #e6ecfa 100%);
+  background-size: 28.00px 28.00px;
   box-shadow: 0 0 2px black;
   padding: 8px;
   padding-top: 0px;
