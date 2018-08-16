@@ -11,3 +11,4 @@ The tattersall pattern is two overlapping gradients.
 The page is dynamically generated and puts the contents in random order.
 
 ![Phone](https://raw.githubusercontent.com/mwissig/Bakery/master/public/images/screenshots/Screenshot%20from%202018-08-14%2016-28-11.png)
+The columns become rows on mobile devices.
