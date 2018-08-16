@@ -1,4 +1,4 @@
-console.log("js working")
+// Triggers and resets the animation
 
 function hoverdropCookie() {
   var element = document.getElementById("cookie");
@@ -7,7 +7,6 @@ function hoverdropCookie() {
   setTimeout(function() {
     element.classList.remove("drop");
     element.classList.add("hide");
-    console.log("removed")
   }, 3000);
 }
 
@@ -18,7 +17,6 @@ function hoverdropCake() {
   setTimeout(function() {
     element.classList.remove("drop");
     element.classList.add("hide");
-    console.log("removed")
   }, 3000);
 }
 
@@ -29,6 +27,5 @@ function hoverdropMuffin() {
   setTimeout(function() {
     element.classList.remove("drop");
     element.classList.add("hide");
-    console.log("removed")
   }, 3000);
 }

@@ -3,11 +3,15 @@ require 'curl'
 require 'json'
 require 'faker'
 
-$recipes = []
+# Generates a fake phone number and address
 $phone = Faker::PhoneNumber.phone_number
 $city = Faker::Address.city
 $address = Faker::Address.street_address + ', ' + $city + ' ' + Faker::Address.state_abbr + ' ' + Faker::Address.zip_code
 p $phone
+
+# A class for the info from the recipe API
+
+$recipes = []
 
 class Recipe
   attr_accessor :title, :image, :ingredients, :url
@@ -20,6 +24,7 @@ class Recipe
   end
 end
 
+# Calls the recipes API and searches for pastry then makes that into a class
 response = Curl::Easy.perform('https://api.edamam.com/search?q=pastry&app_id=9fe0342d&app_key=7f95bba1174654a70a65111e5fcf85ce')
 @food_data = JSON.parse(response.body_str)
 @food_data['hits'].each_index do |i|
@@ -30,8 +35,11 @@ response = Curl::Easy.perform('https://api.edamam.com/search?q=pastry&app_id=9fe
   recipe = Recipe.new(title, image, ingredients, url)
 end
 
+# API keys can be separated from the code but are needed to run it so are left in for now
 # API_ID=9fe0342d APP_KEY=7f95bba1174654a70a65111e5fcf85ce ruby server.rb
 
+
+# Classes for each bakery item
 $cookies = []
 $cakes = []
 $muffins = []
@@ -69,6 +77,7 @@ class Muffin
 end
 end
 
+# Filling the classes with info
 cookie = Cookie.new('Peanut Butter Cookies', 6.99, 'images/cookie2.png', 'A chewy peanut butter cookie with classic criss-crossed fork scoring.')
 cookie = Cookie.new('Chocolate-Dipped Pistachio Rose Biscotti', 13.99, 'images/bisc.png', 'A crunchy floral-scented biscotti.')
 cookie = Cookie.new('Chocolate Drizzled Lemon Cookies', 4.99, 'images/driz.png', 'Long strands of candied lemon topped with dark chocolate.')
@@ -96,6 +105,7 @@ cake = Cake.new('Finger Lime Cake', 44.99, 'images/green.png', 'This cake is top
 cake = Cake.new('Rose Petal Cheesecake', 33.99, 'images/rose.png', 'A dense, creamy and floal cheesecake topped with candied rose petals.')
 cake = Cake.new('Bob Ross Cake', 22.99, 'images/cake4.png', "A devil's food cake sweetened with shredded beets and brushed with a walnut glaze.")
 
+# The pages
 get '/' do
   erb :home
 end
