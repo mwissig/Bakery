@@ -1,0 +1,29 @@
+[1m[1;34mComparable#methods[0m[0m: <  <=  >  >=  between?  clamp
+[1m[1;34mString#methods[0m[0m: 
+  %            chr                    freeze             reverse      swapcase           
+  *            clear                  getbyte            reverse!     swapcase!          
+  +            codepoints             grapheme_clusters  rindex       to_c               
+  +@           concat                 gsub               rjust        to_f               
+  -@           count                  gsub!              rpartition   to_i               
+  <<           crypt                  hash               rstrip       to_r               
+  <=>          delete                 hex                rstrip!      to_s               
+  ==           delete!                include?           scan         to_str             
+  ===          delete_prefix          index              scrub        to_sym             
+  =~           delete_prefix!         insert             scrub!       tr                 
+  []           delete_suffix          inspect            setbyte      tr!                
+  []=          delete_suffix!         intern             shellescape  tr_s               
+  ascii_only?  downcase               length             shellsplit   tr_s!              
+  b            downcase!              lines              size         undump             
+  bytes        dump                   ljust              slice        unicode_normalize  
+  bytesize     each_byte              lstrip             slice!       unicode_normalize! 
+  byteslice    each_char              lstrip!            split        unicode_normalized?
+  capitalize   each_codepoint         match              squeeze      unpack             
+  capitalize!  each_grapheme_cluster  match?             squeeze!     unpack1            
+  casecmp      each_line              next               start_with?  upcase             
+  casecmp?     empty?                 next!              strip        upcase!            
+  center       encode                 oct                strip!       upto               
+  chars        encode!                ord                sub          valid_encoding?    
+  chomp        encoding               partition          sub!       
+  chomp!       end_with?              prepend            succ       
+  chop         eql?                   pretty_print       succ!      
+  chop!        force_encoding         replace            sum        
