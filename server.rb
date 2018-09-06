@@ -24,8 +24,14 @@ class Recipe
   end
 end
 
+response = CURL.get("https://api.edamam.com/search?q=pastry&app_id=9fe0342d&app_key=7f95bba1174654a70a65111e5fcf85ce")
+
+# do|http|
+#  http.headers['accept'] = 'application/JSON'
+#  end
+
 # Calls the recipes API and searches for pastry then makes that into a class
-response = Curl::Easy.perform('https://api.edamam.com/search?q=pastry&app_id=9fe0342d&app_key=7f95bba1174654a70a65111e5fcf85ce')
+# response = Curl::Easy.perform('https://api.edamam.com/search?q=pastry&app_id=9fe0342d&app_key=7f95bba1174654a70a65111e5fcf85ce')
 @food_data = JSON.parse(response.body_str)
 @food_data['hits'].each_index do |i|
   title = @food_data['hits'][i]['recipe']['label']
